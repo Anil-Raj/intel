@@ -1,0 +1,70 @@
+.lpg-group h3 {
+    font-size: 1.13rem;
+}
+
+.card.lpg-group {
+    box-shadow: 0px 3px 6px #888;
+    margin-bottom: 20px;
+}
+
+.lpg-group .tab-icons i {
+    font-size: 1.3rem;
+    padding-right: 15px;
+    color: #a5a5a5;
+}
+
+.lpg-group .nav-item .active i {
+    color: #545454;
+}
+
+.lpg-group #grid,
+.lpg-group #list {
+    padding: 0px 20px;
+}
+
+.lpg-group #grid .card {
+    border-radius: 2px;
+    color: #545454;
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 20px;
+    display: table;
+    min-height: 80px;
+}
+
+.lpg-group .card-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.lpg-group .card-body a {
+    color: #242424;
+}
+
+.lpg-group .bg-primary {
+    background-color: #00adee !important;
+}
+
+.lpg-group .bg-success {
+    background-color: #c4d500 !important;
+}
+
+.lpg-group .bg-info {
+    background-color: #f3d44e !important;
+}
+
+.lpg-group .card-head {
+    text-decoration: underline;
+}
+
+.lpg-group .ext-link::after {
+    content: "\f35d";
+    color: #242424;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    border: 0;
+    vertical-align: top;
+    font-size: 14px;
+    margin-left: 10px;
+}

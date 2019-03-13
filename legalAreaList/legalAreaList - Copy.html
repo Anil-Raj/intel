@@ -1,0 +1,171 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sp-pnp-js/3.0.10/pnp.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
+
+
+<div ng-app="rootApp">
+    <div ng-controller="legalAreaListController">
+        <div>
+            <div class="w-25 m-7" ng-repeat="legalArea in legalAreaList">
+                <a ng-href="legalArea.url">{{legalArea.title}}</a>
+                <img ng-if="legalArea.nav_isOpenInNewWindow" src="/SiteAssets/Legal/Images/new-window.jpg" alt="" height="24px" width="24px">
+            </div>
+        </div>
+    </div>
+    <div class="container page-content" ng-controller="legalGroupGridListController">
+        <div class="row page-content-row">
+
+            <div class="col page-content-left-col">
+                <div class="card lpg-group">
+                    <div class="row">
+                        <div class="col-10">
+                            <h3>LPG Groups</h3>
+                        </div>
+                        <div class="col-2  tab-icons">
+                            <ul class="nav float-right" role="tablist">
+                                <li class="nav-item" ng-click="displayGrid()">
+                                    <a ng-class="{'active': !isList }" data-toggle="tab" >
+                                        <i class="fas fa-th"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item" ng-click="displayList()">
+                                    <a data-toggle="tab" ng-class="{'active': isList }" >
+                                        <i class="fas fa-list"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--tabs contents starts here-->
+                        <div class="tab-content">
+                            <!--grid starts here-->
+                            <div id="grid" class="container tab-pane" ng-if="!isList">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-2 py-2 px-2" ng-repeat="lpgGroup in gridList">
+                                        <div class="card h-100 w-100  " ng-class="[{'bg-primary':lpgGroup.groupname == 'Business Unit Legal terms'},{'bg-success':lpgGroup.groupname == 'Regional Groups'},{'bg-info':lpgGroup.groupname=='Groups supporting all regions'}]">
+                                            <div class="card-body text-center">
+                                                <p class="card-text">
+                                                    <a ng-href="lpgGroup.url">{{lpgGroup.title}}</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--grid ends here-->
+
+                        <!--list view starts here-->
+                        <div id="list" class="container tab-pane" ng-if="isList">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 py-2 px-2" ng-repeat="legalGroupList in groupList">
+                                    <div class="card  w-100 " ng-class="[{'bg-primary':legalGroupList.groupname == 'Business Unit Legal terms'},{'bg-success':legalGroupList.groupname == 'Regional Groups'},{'bg-info':legalGroupList.groupname=='Groups supporting all regions'}]">
+                                        <div class="card-body">
+                                            <p class="card-text card-head">{{legalGroupList.groupname}}</p>
+                                            <ul>
+                                                <li ng-repeat="legalGroup in legalGroupList.list">
+                                                    <a ng-href="legalGroup.url">{{legalGroup.title}}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="/SiteAssets/Legal/App/legalgroupgridlist/legalgroupgridlist.css" rel="stylesheet">
+
+<script>
+    var spApp = angular.module("rootApp", []);
+    spApp.controller("legalAreaListController", ['$scope', '$rootScope', function ($scope, $rootScope) {
+        $rootScope.$on("MyEvent", function (evt, data) {
+            // handler code here
+            console.log('adfasf');
+            console.log(data);
+        });$scope.legalAreaList = [];
+        $pnp.sp.navigation.getMenuState(null, 5, "GlobalNavigationSwitchableProvider", "nav_isVisible,nav_isOpenInNewWindow").then((r) => {
+            $.each(r.Nodes, function (key, values) {
+                if (values.Title === 'Legal Areas') {
+                    values.Nodes.map(node => {
+                        legalAreaObj = {
+                            title: node.Title,
+                            url: node.SimpleUrl,
+                            nav_isOpenInNewWindow: false
+                        };
+                        node.CustomProperties && node.CustomProperties.filter(a => {
+                            if (a.Key == "nav_isOpenInNewWindow" &&
+                                a.Value == "true") {
+                                legalAreaObj.nav_isOpenInNewWindow = true;
+                            }
+                        });
+                        $scope.legalAreaList.push(legalAreaObj);
+                    });
+                    $scope.$apply();
+
+                }
+            });
+        });
+    }
+    ]);
+
+    spApp.controller("legalGroupGridListController", ['$scope', '$rootScope', function ($scope, $rootScope) {
+        $scope.isList = true;
+        $scope.groupList = [];
+        $scope.gridList = [];
+        console.log('aaaaaaaaaaaa');
+        
+        $rootScope.$broadcast("MyEvent", { "name": "test", "desc": "description" });
+        //$scope.on("eventname",function(data){
+
+        //});
+        $pnp.sp.navigation.getMenuState(null, 5, "GlobalNavigationSwitchableProvider", "nav_isVisible,nav_isOpenInNewWindow").then((r) => {
+            $.each(r.Nodes, function (key, values) {
+                if (values.Title === 'LPG Groups') {
+                    values.Nodes.map(node => {
+                        var groups = [];
+                        node.Nodes.map(item => {
+                            groupObj = {
+                                groupname: node.Title,
+                                title: item.Title,
+                                url: node.SimpleUrl,
+                                nav_isOpenInNewWindow: false
+
+                            };
+                            item.CustomProperties && item.CustomProperties.filter(a => {
+                                if (a.Key == "nav_isOpenInNewWindow" &&
+                                    a.Value == "true") {
+                                    groupObj.nav_isOpenInNewWindow = true;
+                                }
+                            });
+                            groups.push(groupObj);
+                        })
+                        $scope.groupList.push({
+                            groupname: node.Title,
+                            list: groups
+                        });
+                        $scope.gridList = $scope.gridList.concat(groups);
+                    });
+                    $scope.$apply();
+
+                }
+            });
+        });
+        $scope.displayGrid = () => $scope.isList = false;
+        $scope.displayList = () => $scope.isList = true;
+        $scope.applyOpenInNewWindowIcon = (group) => {
+            console.log(group)
+
+        };
+    }
+    ]);  
+</script>

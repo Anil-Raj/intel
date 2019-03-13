@@ -1,0 +1,130 @@
+/* home page search css starts here*/
+
+
+.search-section{
+    min-height: 550px;
+    margin-bottom: 10px;
+}
+
+.search-content{   
+    min-height: 500px;
+    background:  url('../images/home_search_bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.search-title{
+    padding: 50px 0 0 0;
+}
+
+.search-title h1{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-body{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.search-bg{
+    background: rgba(0, 0, 0, 0.8);
+    padding:36px 25px 25px;
+    min-height: 350px;
+}
+
+.search-body a{
+    color: #fff;
+}
+.search-body a:hover{
+    text-decoration: none;
+}
+.search-sub-links {
+    padding-left:  15px;
+}
+
+.search-body a.external-link::after{
+    content: "\f35d";
+    color: #fff;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    border: 0;
+    vertical-align: top;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.search-body .nav-btm-links{
+    margin: 15px 0 0 0;
+}
+.search-body .btm-right-txt{
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+}
+/* search tabs */
+
+.search-body .nav-tabs{
+    border: 0;
+    padding: 0 40px;
+}
+.search-body .nav-tabs  li a{   
+    font-size: 1.1rem;
+    padding: 10px 10px;
+    border: 0 0 5px 0;
+    border-color:  transparent;
+}
+.search-body .nav-tabs  li a.active{    
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    border: 0;
+    border-bottom: 5px solid #ffa200;
+    font-weight: 600;
+}
+.search-body .nav-tabs  li a.active:hover{
+    border: 0;
+    border-bottom: 5px solid #ffa200; 
+}
+.search-body .nav-tabs  li a:hover{
+    border: 0 0 5px 0;
+    border-color:  transparent;
+}
+.mar-0-c-2{
+    margin: 0 auto 20px;
+}
+
+.mar-0-c-2 .form-control{
+    box-shadow: 0px 3px 6px #888;
+    border-radius: 0;
+}
+.mar-0-c-2 i.fas{
+    font-size: 24px;
+}
+
+.mar-0-c-2 .input-group-append .btn, .mar-0-c-2 .input-group-append .btn:active{
+    background-color: #c4d600;
+    box-shadow: 0px 3px 6px #888;
+    padding: 6px 18px 2px;
+    border-radius: 0;
+}
+.mar-0-c-2 .input-group-append .btn:hover, .mar-0-c-2 .input-group-append .btn:active{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 730px) {
+    .search-body{        
+        position: none;
+        bottom: 0;       
+    }
+    .search-body .btm-right-txt{
+        position: initial;
+    }
+}
+
+/* home page seach css ends here */
