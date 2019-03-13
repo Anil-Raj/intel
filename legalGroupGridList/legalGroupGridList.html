@@ -1,64 +1,58 @@
-<div class="container page-content" ng-controller="legalGroupGridListController">
-    <div class="row page-content-row">
-        <div class="col page-content-left-col">
-            <div class="card lpg-group">
+<div class="card lpg-group" ng-controller="legalGroupGridListController">
+    <div class="row">
+        <div class="col-10">
+            <h3>LPG Groups</h3>
+        </div>
+        <div class="col-2  tab-icons">
+            <ul class="nav float-right" role="tablist">
+                <li class="nav-item" ng-click="displayGrid()">
+                    <a ng-class="{'active': !isList }" data-toggle="tab">
+                        <i class="fas fa-th"></i>
+                    </a>
+                </li>
+                <li class="nav-item" ng-click="displayList()">
+                    <a data-toggle="tab" ng-class="{'active': isList }">
+                        <i class="fas fa-list"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <!--tabs contents starts here-->
+        <div class="tab-content">
+            <!--grid starts here-->
+            <div id="grid" class="container tab-pane active" ng-if="!isList">
                 <div class="row">
-                    <div class="col-10">
-                        <h3>LPG Groups</h3>
-                    </div>
-                    <div class="col-2  tab-icons">
-                        <ul class="nav float-right" role="tablist">
-                            <li class="nav-item" ng-click="displayGrid()">
-                                <a ng-class="{'active': !isList }" data-toggle="tab">
-                                    <i class="fas fa-th"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item" ng-click="displayList()">
-                                <a data-toggle="tab" ng-class="{'active': isList }">
-                                    <i class="fas fa-list"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--tabs contents starts here-->
-                    <div class="tab-content">
-                        <!--grid starts here-->
-                        <div id="grid" class="container tab-pane active" ng-if="!isList">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-2 py-2 px-2" ng-repeat="legalGroup in gridList">
-                                    <div class="card h-100 w-100  " ng-class="[{'bg-primary':legalGroup.groupname == 'Business Unit Legal terms'},{'bg-success':legalGroup.groupname == 'Regional Groups'},{'bg-info':legalGroup.groupname=='Groups supporting all regions'}]">
-                                        <div class="card-body text-center">
-                                            <p class="card-text">
-                                                <a target="{{legalGroup.nav_isOpenInNewWindow ? '_blank' : '_self'}}" href="{{legalGroup.url}}">{{legalGroup.title}}
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-sm-6 col-md-2 py-2 px-2" ng-repeat="legalGroup in gridList">
+                        <div class="card h-100 w-100  " ng-class="[{'bg-primary':legalGroup.groupname == 'Business Unit Legal terms'},{'bg-success':legalGroup.groupname == 'Regional Groups'},{'bg-info':legalGroup.groupname=='Groups supporting all regions'}]">
+                            <div class="card-body text-center">
+                                <p class="card-text">
+                                    <a target="{{legalGroup.nav_isOpenInNewWindow ? '_blank' : '_self'}}" href="{{legalGroup.url}}">{{legalGroup.title}}
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <!--grid ends here-->
+                </div>
+            </div>
+        </div>
+        <!--grid ends here-->
 
-                    <!--list view starts here-->
-                    <div id="list" class="container tab-pane" ng-if="isList">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4 py-2 px-2" ng-repeat="legalGroupList in groupList">
-                                <div class="card  w-100 " ng-class="[{'bg-primary':legalGroupList.groupname == 'Business Unit Legal terms'},{'bg-success':legalGroupList.groupname == 'Regional Groups'},{'bg-info':legalGroupList.groupname=='Groups supporting all regions'}]">
-                                    <div class="card-body">
-                                        <p class="card-text card-head">{{legalGroupList.groupname}}</p>
-                                        <ul>
-                                            <li ng-repeat="legalGroup in legalGroupList.list">
-                                                <a href="{{legalGroup.url}}" target="{{legalGroup.nav_isOpenInNewWindow  ? '_blank' : '_self'}}">{{legalGroup.title}}
-                                                    <i ng-if=" legalGroup.nav_isOpenInNewWindow " class="fas fa-external-link-square-alt"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+        <!--list view starts here-->
+        <div id="list" class="container tab-pane" ng-if="isList">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 py-2 px-2" ng-repeat="legalGroupList in groupList">
+                    <div class="card  w-100 " ng-class="[{'bg-primary':legalGroupList.groupname == 'Business Unit Legal terms'},{'bg-success':legalGroupList.groupname == 'Regional Groups'},{'bg-info':legalGroupList.groupname=='Groups supporting all regions'}]">
+                        <div class="card-body">
+                            <p class="card-text card-head">{{legalGroupList.groupname}}</p>
+                            <ul>
+                                <li ng-repeat="legalGroup in legalGroupList.list">
+                                    <a href="{{legalGroup.url}}" target="{{legalGroup.nav_isOpenInNewWindow  ? '_blank' : '_self'}}">{{legalGroup.title}}
+                                        <i ng-if=" legalGroup.nav_isOpenInNewWindow " class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -66,6 +60,7 @@
         </div>
     </div>
 </div>
+
 
 <script src="/SiteAssets/Legal/App/legalgroupgridlist/legalgroupgridlistcontroller.js"></script>
 <link href="/SiteAssets/Legal/App/legalgroupgridlist/legalgroupgridlist.css" rel="stylesheet">
