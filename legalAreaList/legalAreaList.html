@@ -37,16 +37,47 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <ul ng-repeat="legalArea in legalAreaList">
+                                <ul ng-repeat="legalArea in lpgArea[0]">
                                     <li>
-                                        <a href="{{legalArea.url}}"  target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
+                                        <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
                                             <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
                                         </a>
-                                        <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 " >
-                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}, </span>
+                                        <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,</span> </span>
                                         </li>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul ng-repeat="legalArea in lpgArea[1]">
+                                    <li>
+                                        <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
+                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
+                                        </a>
+                                        <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,</span> </span>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul ng-repeat="legalArea in lpgArea[2]">
+                                    <li>
+                                        <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
+                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
+                                        </a>
+                                        <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}} <span ng-if="!$last">,</span></span>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
+                                <span style="float: right;">
+                                    <i class="fas fa-external-link-square-alt ng-scope"></i>Takes you to different site</span>
                             </div>
                         </div>
                     </div>

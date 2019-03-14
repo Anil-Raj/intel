@@ -2,13 +2,13 @@
 
 
 .search-section{
-    min-height: 550px;
+    min-height: 500px;
     margin-bottom: 10px;
 }
 
 .search-content{   
     min-height: 500px;
-    background:  url('../images/home_search_bg.jpeg');
+    background:  url('../../images/home_search_bg.jpeg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
