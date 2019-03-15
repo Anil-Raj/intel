@@ -12,16 +12,16 @@
               <div class="nav-item" ng-class="{'dis-table-cel': TermSets.Title !='Legal Areas' && Termset.Nodes.results.length > 0  } "
                 ng-show="TermSets.Nodes.results.length > 0 " ng-repeat="Termset in TermSets.Nodes.results">
                 <a class="nav-link" ng-class="{'sub-link-title': Termset.Nodes.results.length > 0, 'nav-link': Termset.Nodes.results.length === 0}"
-                  ng-if="TermSets.Nodes.results.length > 0 && TermSets.Title !='LPG Groups'" ng-href="{{Termset.SimpleUrl}}">{{Termset.Title}} <i ng-if="isTermsetExternal(Termset)" class="fas fa-external-link-square-alt"></i></a>
+                  ng-if="TermSets.Nodes.results.length > 0 && TermSets.Title !='LPG Groups'" ng-href="{{Termset.SimpleUrl}}">{{Termset.Title}} <i ng-if="isTermsetExternal(Termset)" class="fas fas fa-external-link-alt"></i></a>
                 <span class="sub-link-title" ng-if="TermSets.Nodes.results.length > 0 && TermSets.Title =='LPG Groups'">{{Termset.Title}}</span>
                 <ul class="nav flex-column" ng-if=" TermSets.Title !='Legal Areas' && Termset.Nodes.results.length > 0">
                   <li class="nav-item " ng-repeat="Terms in Termset.Nodes.results">
-                    <a class="nav-link" ng-href="{{Terms.SimpleUrl}}">{{Terms.Title}} <i ng-if=" isTermsetExternal(Terms)" class="fas fa-external-link-square-alt"></i></a>
+                    <a class="nav-link" ng-href="{{Terms.SimpleUrl}}">{{Terms.Title}} <i ng-if=" isTermsetExternal(Terms)" class="fas fas fa-external-link-alt"></i></a>
                   </li>
                 </ul>
                 <ul class="nav flex-column sub-links" ng-if="TermSets.Title=='Legal Areas' && Termset.Nodes.results.length > 0">
                   <li class="nav-item" ng-repeat="Terms in Termset.Nodes.results">
-                    <a class="nav-link" ng-href="{{Terms.SimpleUrl}}">{{Terms.Title}} <i ng-if=" isTermsetExternal(Terms)" class="fas fa-external-link-square-alt"></i></a>
+                    <a class="nav-link" ng-href="{{Terms.SimpleUrl}}">{{Terms.Title}} <i ng-if=" isTermsetExternal(Terms)" class="fas fas fa-external-link-alt"></i></a>
                   </li>
                 </ul>
               </div>
@@ -31,7 +31,7 @@
               <div class="col-md-8"></div>
               <div class="col-md-4">
                   <span style="float: right;">
-                      <i class="fas fa-external-link-square-alt ng-scope"></i>Takes you to different site</span>
+                      <i class="fas fas fa-external-link-alt ng-scope"></i>Takes you to different site</span>
               </div>
           </div>
           </div>
