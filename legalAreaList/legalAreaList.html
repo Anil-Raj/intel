@@ -1,4 +1,4 @@
-<div class="search-section" ng-controller="legalAreaListController">
+﻿<div class="search-section" ng-controller="legalAreaListController">
     <div class="search-content h-100">
         <div class="search-title">
             <h1>What can we help you with today?</h1>
@@ -14,9 +14,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" id="site-tab" data-toggle="tab" href="#siteContent1" role="tab" aria-controls="site" aria-selected="true">Site Content</a>
                         </li>
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <a class="nav-link" id="lpg-tab" data-toggle="tab" href="#lpgContent1" role="tab" aria-controls="lpg" aria-selected="false">LPG Staff</a>
-                        </li>
+                        </li>-->
 
                     </ul>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="tab-pane fade show active" id="siteContent1" role="tabpanel" aria-labelledby="site-tab">
                         <div class="row">
                             <div class="input-group col-md-10 mar-0-c-2">
-                                <input class="form-control py-2 border-right-0 border" type="search" placeholder="documents,articles, guidelines..." id="example-search-input">
+                                <input class="form-control py-2 border-right-0 border" type="search" placeholder="documents, articles, guidelines..." id="example-search-input">
                                 <span class="input-group-append">
                                     <button class="btn btn-outline-secondary border-left-0 border" type="button">
                                         <i class="fas fa-search"></i>
@@ -40,10 +40,10 @@
                                 <ul ng-repeat="legalArea in lpgArea[0]">
                                     <li>
                                         <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
-                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
+                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-alt"></i>
                                         </a>
                                         <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
-                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,</span> </span>
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,&nbsp;</span> </span>
                                         </li>
                                     </li>
                                 </ul>
@@ -52,10 +52,10 @@
                                 <ul ng-repeat="legalArea in lpgArea[1]">
                                     <li>
                                         <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
-                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
+                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-alt"></i>
                                         </a>
                                         <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
-                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,</span> </span>
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,&nbsp;</span></span>
                                         </li>
                                     </li>
                                 </ul>
@@ -64,10 +64,10 @@
                                 <ul ng-repeat="legalArea in lpgArea[2]">
                                     <li>
                                         <a href="{{legalArea.url}}" target="{{ legalArea.nav_isOpenInNewWindow ? '_blank' : '_self'}}">{{legalArea.title}}
-                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-square-alt"></i>
+                                            <i ng-if=" legalArea.nav_isOpenInNewWindow" class="fas fa-external-link-alt"></i>
                                         </a>
                                         <li class="search-sub-links" ng-if="legalArea.subArea.length > 0 ">
-                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}} <span ng-if="!$last">,</span></span>
+                                            <span ng-repeat="lpg in legalArea.subArea">{{lpg.Title}}<span ng-if="!$last">,&nbsp;</span></span>
                                         </li>
                                     </li>
                                 </ul>
@@ -77,7 +77,7 @@
                             <div class="col-md-8"></div>
                             <div class="col-md-4">
                                 <span style="float: right;">
-                                    <i class="fas fa-external-link-square-alt ng-scope"></i>Takes you to different site</span>
+                                    <i class="fas fa-external-link-alt"></i>&nbsp;Takes you to different site</span>
                             </div>
                         </div>
                     </div>

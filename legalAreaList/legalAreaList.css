@@ -1,14 +1,14 @@
-/* home page search css starts here*/
+﻿/* home page search css starts here*/
 
 
 .search-section{
-    min-height: 500px;
+    min-height: 550px;
     margin-bottom: 10px;
 }
 
 .search-content{   
-    min-height: 500px;
-    background:  url('../../images/home_search_bg.jpeg');
+    min-height: 580px;
+    background:  url('../../images/search_background.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -29,7 +29,8 @@
 .search-body{
     color: #fff;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
+    top: 118px;
     width: 100%;
     font-size: 0.9rem;
 }
@@ -38,7 +39,9 @@
     padding:36px 25px 25px;
     min-height: 350px;
 }
-
+.search-body a i.fas{
+	margin-left:10px;
+}
 .search-body a{
     color: #fff;
 }
@@ -84,16 +87,22 @@
     color: #fff;
     background: rgba(0, 0, 0, .8);
     border: 0;
-    border-bottom: 5px solid #ffa200;
+   /* border-bottom: 5px solid #ffa200;*/
+    border-bottom: 5px solid transparent;
     font-weight: 600;
 }
 .search-body .nav-tabs  li a.active:hover{
     border: 0;
-    border-bottom: 5px solid #ffa200; 
+    /* border-bottom: 5px solid #ffa200;*/
+    border-bottom: 5px solid transparent;
 }
 .search-body .nav-tabs  li a:hover{
     border: 0 0 5px 0;
     border-color:  transparent;
+}
+
+.search-body input.border-right-0.border {
+    border: 0px;
 }
 .mar-0-c-2{
     margin: 0 auto 20px;
