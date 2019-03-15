@@ -1,7 +1,7 @@
 
 var spApp = angular.module("rootApp");
 spApp.controller("legalGroupGridListController", ['$scope', '$rootScope', function ($scope, $rootScope) {
-    $scope.isList = true;
+    $scope.isList = false;
     $scope.groupList = [];
     $scope.gridList = [];
     $rootScope.$on("termsData", function (evt, data) {
