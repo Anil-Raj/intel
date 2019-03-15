@@ -1,4 +1,4 @@
-/* top menu css  */
+﻿/* top menu css  */
 
 
 /* brand css applying to top navigation*/
@@ -69,7 +69,9 @@
 	padding-left: 15px;
 }
 
-
+.m-o-c{
+	margin:0 auto;
+}
 
 /* breakpoint and up - mega dropdown styles */
 
@@ -83,7 +85,7 @@
 		margin: 0 .25rem;
 	}
 	.navbar .dropdown {
-		position: static;
+		position: relative;
 	}
 	.navbar .dropdown:hover .dropdown-menu,
 	.navbar .dropdown .dropdown-menu:hover {
@@ -96,7 +98,7 @@
    width: 60%;*/
 		width: max-content;
 		margin: 1px auto;
-		left: 0;
+		left: -65%;
 		right: 0;
 		top: 45px;
 		padding: 20px 35px 25px 35px;
@@ -116,14 +118,14 @@
 		padding-left: 0;
 		padding-top: 0;
 		padding-bottom: 0;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 	li.nav-item.dropdown:hover {
 		background: #f3f3f3;
 		box-shadow: 0px 3px 6px #888;
 	}
 	.dropdown-menu .nav-item {
-		padding: 15px 0 0;
+		padding: 10px 0 0;
 	}
 		
 	.dropdown-menu .sub-links .nav-item{
@@ -150,4 +152,13 @@
 	.sub-link-title{
 		font-size: 1rem;
 	}
+}
+.navbar-legalArea-column-container{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 530px;
+}
+.width-60{
+	width: 60vw!important;
 }
