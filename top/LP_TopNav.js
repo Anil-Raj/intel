@@ -11,7 +11,7 @@ app.controller('NavigationController', ['$scope','$rootScope','$http', function 
         return Termset.CustomProperties && Termset.CustomProperties.results &&  Termset.CustomProperties.results['length'] > 0 && Termset.CustomProperties.results[0].Value == 'yes';
     }
     //Replace navigation.json with '/_api/navigation/menustate?mapprovidername='GlobalNavigationSwitchableProvider'
-    $http.get("https://dev-legal.intel.com/_api/navigation/menustate?mapprovidername=%27GlobalNavigationSwitchableProvider%27&customProperties=%27nav_external%27").then(function (data) {
+    $http.get(window.location.protocol + "//" + window.location.host + "/_api/navigation/menustate?mapprovidername=%27GlobalNavigationSwitchableProvider%27&customProperties=%27nav_external%27").then(function (data) {
         $scope.NavigationItems = data.data.d.MenuState.Nodes.results;
                 
         console.log($scope.NavigationItems);
