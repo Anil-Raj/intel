@@ -1,0 +1,2013 @@
+﻿{
+    "deployment": {
+        "timeZone": "Pacific Standard Time",
+        "majorVersion": 1,
+        "minorVersion": 0,
+        "updateVersion": 0,
+        "buildVersion": 0,
+        "deploymentSteps": [
+            "ActivateFeaturesSite",
+            "ActivateFeaturesWeb",
+            "CreateTaxonomy",
+            "CreateKeywords",
+            "CreateColumns",
+            "CreateContentTypes",
+            "CreateLists",
+            "CreateDocumentLibraries",
+            "CreateFolders",
+            "UploadFiles",
+            "UploadMasterPages",
+            "UploadLayouts",
+            "CreatePageInstances",
+            "CreateGroups",
+            "GenerateListData",
+            "GenerateLibraryData",
+            "CreateLookupColumns",
+            "AddWebPartsToPages",
+            "UpdateBuildNumber"
+        ],
+        "skipSteps": [
+            "ActivateFeaturesSite",
+            "ActivateFeaturesWeb",
+            "CreateTaxonomy",
+            "CreateKeywords",
+             "CreateColumns",
+            //"CreateContentTypes",
+            "CreateLists",
+            "CreateDocumentLibraries",
+            "CreateFolders",
+            "UploadFiles",
+              "UploadMasterPages",
+             "UploadLayouts",
+            "CreatePageInstances",
+            "CreateGroups",
+            "GenerateListData",
+            "GenerateLibraryData",
+            "CreateLookupColumns",
+            "AddWebPartsToPages",
+            "UpdateBuildNumber"
+        ]
+    },
+    "tenancy": {
+        "name": "",
+        "isOnline": false,
+        "userName": "kravipax",
+        "domain": "GAR",
+        "password": "Neudesic@123"
+    },
+    "sitecollection": {
+        "title": "Test-LegalPortal",
+        "rootSiteTemplateId": "BLANKINTERNETCONTAINER#0",
+        "url": "https://dev-legal.intel.com",
+        "override": false
+    },
+    "webinfo": {
+        "title": "Test-LegalPortal",
+        "rootSiteTemplateId": "BLANKINTERNETCONTAINER#0",
+        "url": "https://dev-legal.intel.com",
+        "override": false
+    },
+    "activatefeaturessite": [],
+    "activatefeaturesweb": [{
+        "title": "SharePoint Server Publishing",
+        "featureId": "94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb"
+    }],
+    "taxonomy": [{
+
+            "TermSetName": "IntelPageCategory",
+            "TermSetID": "E7895E42-EA02-4816-B16B-BB4C8FA5B03B",
+            "SimpleLinkUrl": "https://www.google.com/",
+            "CustomProperty": [{
+                "CustomPropertyName": "nav_external",
+                "CustomPropertyValue": "no"
+            }],
+            "Terms": [{
+                    "Title": "FAQ",
+                    "TermID": "3B88511A-81BB-4504-81A6-FB6AB9C889FB",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+                },
+                {
+                    "Title": "Policy",
+                    "TermID": "BDE30C3C-C926-4DB6-976E-A0F8CD542EFC",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+
+                },
+                {
+                    "Title": "Procedures",
+
+                    "TermID": "93DB1B1F-338F-46BE-98BD-56DF99BCFE7B",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+
+                },
+                {
+                    "Title": "Guidelines",
+                    "TermID": "02717948-A8A5-4F65-BFBA-0D7F7AC8CF19",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+                },
+                {
+                    "Title": "Forms",
+                    "TermID": "077D418E-85E9-43D8-86D0-5F5866CCCBD5",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+                }
+            ]
+        },
+
+        /* Top navigation termsets and terms creation starts from here*/
+        {
+            "TermSetName": "LP_GlobalNavigationFW",
+            "TermSetID": "F274DD8A-E127-484E-BE84-A75665DA6D98",
+            "SimpleLinkUrl": "https://www.google.com/",
+            "CustomProperty": [{
+                "CustomPropertyName": "nav_external",
+                "CustomPropertyValue": "no"
+            }],
+            "Terms": [
+
+                {
+
+                    "Title": "Legal Areas",
+
+                    "TermID": "F174DD8A-E127-484E-BE84-B75665DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+                    "Terms": [{
+                            "Title": "Acquisitions & Investment Projects",
+                            "TermID": "F374DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Attorney client privilege",
+                            "TermID": "F474DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Benchmarking products & Components",
+                            "TermID": "F574DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Confidentiality",
+                            "TermID": "F574DD8A-E121-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "NDA Database",
+                                    "TermID": "F574DD8A-E122-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "NDA forms",
+                                    "TermID": "F574DD8A-E123-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Guidelines",
+                                    "TermID": "F574DD8A-E124-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+                            ]
+                        },
+                        {
+                            "Title": "Copyright",
+                            "TermID": "F124DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+                            "Terms": [
+
+                                {
+                                    "Title": "Software Licensing",
+                                    "TermID": "F574DD8A-E126-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Software Development",
+                                    "TermID": "F574DD8A-E128-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "External publications",
+                                    "TermID": "F574DD8A-E129-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Third-Party Content",
+                                    "TermID": "F574DD8A-E124-484E-BE85-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+                            ]
+                        },
+                        {
+                            "Title": "Customers with Special Procedures",
+                            "TermID": "F334DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Data Security",
+                            "TermID": "F444DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Ethics & Legal Compliance",
+                            "TermID": "F554DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "yes"
+                            }]
+                        },
+                        {
+                            "Title": "HR Legal (ELL)",
+                            "TermID": "F664DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Industry Standards at Intel",
+                            "TermID": "F774DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "yes"
+                            }]
+                        },
+                        {
+                            "Title": "Intel Corporation, Subsidiaries & Stock",
+
+                            "TermID": "F884DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Corporate Action Request (CAR)",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B15665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Trading in Intel Stock",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B25665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Reportable Events",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B35665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "Title": "Investors & Patents",
+                            "TermID": "F234DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "yes"
+                            }]
+                        },
+                        {
+                            "Title": "Marketing",
+                            "TermID": "F244DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Sweepstakes & Contests",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B71665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Social Media",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B72665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Working with Influencers",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B73665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Disclaimers",
+                                    "TermID": "F884DD8A-E127-484E-BE84-B74665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "Title": "Records Retention",
+                            "TermID": "F294DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Sales",
+                            "TermID": "F304DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Antitrust Compliance",
+                                    "TermID": "F304DD8A-E127-124E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Sales Process Guidelines",
+                                    "TermID": "F304DD8A-E127-134E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Market Development Funding (MDF)",
+                                    "TermID": "F304DD8A-E127-144E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Supply Communications",
+                                    "TermID": "F304DD8A-E127-154E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "Title": "Trademarks & Brands",
+                            "TermID": "F354DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Intel Names database",
+                                    "TermID": "F304DD8A-E127-154E-AE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Using Intel's",
+                                    "TermID": "F304DD8A-E127-154E-CE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Trademarks",
+                                    "TermID": "F304DD8A-E127-154E-DE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Using Project Code Names",
+                                    "TermID": "F304DD8A-E127-154E-EE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+                            ]
+                        }
+
+
+                    ]
+                },
+
+                {
+                    "Title": "Home",
+
+                    "TermID": "F304DD8A-E127-154E-FE84-B75665DA6D98",
+                    "SimpleLinkUrl": "https://test10-legal.intel.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }]
+                },
+                {
+
+                    "Title": "LPG People",
+
+                    "TermID": "F304DD1A-E127-154E-FE84-B75665DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+                    "Terms": [
+
+                        {
+                            "Title": "Find LPG Staff (FLS)",
+                            "TermID": "F304DD2A-E127-154E-FE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Org Charts",
+                            "TermID": "F304DD3A-E127-154E-FE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        }
+
+                    ]
+                },
+                {
+
+                    "Title": "LPG Groups",
+
+                    "TermID": "F304DD3A-E127-154E-FE84-B71265DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+
+                    "Terms": [
+
+                        {
+                            "Title": "Groups supporting all regions",
+                            "TermID": "F304DD3A-E127-154E-FE84-B71365DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Corporate Government Affairs",
+                                    "TermID": "F304DD3A-E127-154E-FE84-B71465DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Corporate Legal",
+                                    "TermID": "F304DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+
+
+                                {
+                                    "Title": "Ethics & Legal Compliance",
+                                    "TermID": "F416DD3A-E127-154E-FE84-B71465DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "yes"
+                                    }]
+                                },
+                                {
+                                    "Title": "Global Tax & Trade",
+                                    "TermID": "F400DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "HR (ELB) legal",
+                                    "TermID": "F417DD3A-E127-154E-FE84-B71465DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Intel Capital (ICAP) Legal",
+                                    "TermID": "F321DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Legal Operations",
+                                    "TermID": "F327DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Marketing Legal",
+                                    "TermID": "F313DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Privacy & Security Legal",
+                                    "TermID": "F316DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Sales Legal",
+                                    "TermID": "F328DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Trademarks Legal",
+                                    "TermID": "F329DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Technology Manufacturing (TMG) Legal",
+                                    "TermID": "F325DD3A-E127-154E-FE84-B71565DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+                            ]
+
+                        },
+                        {
+                            "Title": "Regional Groups",
+                            "TermID": "F304DD3A-E127-154E-FE84-B71665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Asia Pacific (APAC) Legal",
+                                    "TermID": "F304DD3A-E127-154E-FE84-B71765DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Europe, Middle East & Africa (EMEA) Legal",
+                                    "TermID": "F304DD3A-E127-154E-FE84-B71865DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Latin America Region (LAR) Legal",
+                                    "TermID": "F304DD3A-E127-154E-FE84-B71965DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+                            ]
+                        },
+
+                        {
+                            "Title": "Business Unit Legal terms",
+                            "TermID": "F366DD3A-E127-154E-FE84-B71865DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }],
+
+
+                            "Terms": [
+
+                                {
+                                    "Title": "Data Center Group (DCG)",
+                                    "TermID": "F372DD3A-E127-154E-FE84-B71865DA5D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Internet of Things Group (IoTG)",
+                                    "TermID": "F384DD3A-E127-154E-FE84-B71865DA1D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Client Computing Group (CCG)",
+                                    "TermID": "F390DD3A-E127-154E-FE84-B71865DA2D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+
+                                {
+                                    "Title": "Nonvolatile Memory Solutions Group (NSG)",
+                                    "TermID": "F373DD3A-E127-154E-FE84-B71865DA3D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                },
+                                {
+                                    "Title": "Programmable Solutions Group (PSG)",
+                                    "TermID": "F174DD8A-E237-484E-BE84-B75665DA6D98",
+                                    "SimpleLinkUrl": "https://www.google.com/",
+                                    "CustomProperty": [{
+                                        "CustomPropertyName": "nav_external",
+                                        "CustomPropertyValue": "no"
+                                    }]
+                                }
+
+                            ]
+                        }
+
+
+
+
+                    ]
+                },
+                {
+
+                    "Title": "Learning Center",
+                    "TermID": "F163DD8A-E127-484E-BE84-B75665DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+
+                    "Terms": [
+
+                        {
+                            "Title": "Legal Training",
+                            "TermID": "F164DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Glossary of useful terms",
+                            "TermID": "F175DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        }
+
+                    ]
+                },
+                {
+
+                    "Title": "Help & FAQs",
+                    "TermID": "F145DD8A-E127-484E-BE84-B75665DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+
+                    "Terms": [{
+                            "Title": "Help",
+                            "TermID": "F155DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "FAQs",
+                            "TermID": "F138DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Sitemap",
+                            "TermID": "F136DD8A-E127-484E-BE84-B75665DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        }
+
+                    ]
+                },
+                {
+
+                    "Title": "I want to know...",
+                    "TermID": "F136DD8A-E127-484E-BE84-B11115DA6D98",
+                    "SimpleLinkUrl": "https://www.google.com/",
+                    "CustomProperty": [{
+                        "CustomPropertyName": "nav_external",
+                        "CustomPropertyValue": "no"
+                    }],
+
+
+                    "Terms": [
+
+                        {
+                            "Title": "If I'm on Legal hold",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11125DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "What to do with a Subpoena",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11135DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "How to use Intel Brand name correctly",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11145DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "How to find a Non-Disclosure (Confidentiality) Agreement",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11155DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "Whether I need to arrange a Legal Exit Interview",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11165DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "What disclaimers/ legal text I should use",
+                            "TermID": "F136DD8A-E127-484E-BE84-B11175DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "What Software License I should use",
+                            "TermID": "F136DD8A-E127-484E-BE84-B12115DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "What are the rules about talking about Intel in Social Media",
+                            "TermID": "F136AD8A-E127-484E-BE84-B12115DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        },
+                        {
+                            "Title": "How to participate in an Industry Standards Group",
+                            "TermID": "F136BD8A-E127-484E-BE84-B12115DA6D98",
+                            "SimpleLinkUrl": "https://www.google.com/",
+                            "CustomProperty": [{
+                                "CustomPropertyName": "nav_external",
+                                "CustomPropertyValue": "no"
+                            }]
+                        }
+
+
+                    ]
+
+                }
+
+            ]
+        },
+
+        /* Top navigation termsets ends here*/
+        ///* Other Useful Sites termsets starts here*/
+        {
+            //Note: "TermSetID": "C242AF2D-28B9-446D-91A4-CA6F9B5CF1A0" should not be altered.
+            "TermSetName": "LP_TopUsefulLinks",
+            "IsNavigationTermset": true,
+            "TermSetID": "C242AF2D-28B9-446D-91A4-CA6F9B5CF1A0",
+            "Terms": [{
+                    "Title": "Ethics & Legal Compliance",
+                    "IsNavigationTermset": true,
+                    "SimpleLinkUrl": "http://ethicscompliance.intel.com/Pages/default.aspx",
+                    "TermID": "BB9F14C8-89DF-4CCD-BF7F-CFD766C5BF54"
+                },
+                {
+                    "Title": "Inventor Portal",
+                    "IsNavigationTermset": true,
+                    "TermID": "0D831BC4-8033-4E82-863C-D99ACE29D833",
+                    "SimpleLinkUrl": "http://inventor.intel.com/Pages/IPG%20Inventor%20Portal.aspx"
+                },
+                {
+                    "Title": "Industry Standards",
+                    "IsNavigationTermset": true,
+                    "TermID": "CDA242A8-BD54-47D6-ACAF-5CD339ED7329",
+                    "SimpleLinkUrl": "https://standards.intel.com/Pages/default.aspx"
+                },
+                {
+                    "Title": "Policy Central",
+                    "IsNavigationTermset": true,
+                    "TermID": "B9FE0E17-C9AB-4154-8FEA-11EDCDAD5F6F",
+                    "SimpleLinkUrl": "https://policycentral.intel.com/metricstream/systemi/Home"
+                }
+            ]
+        }
+        /* Other Useful Sites termsets ends here*/
+    ],
+    "keywords": [
+
+    ],
+    "columns": [
+        /*--Site columns for Tags statrs here--*/
+
+        {
+            "id": "707EE2CF-7F64-423E-9A88-11DCA55DB1C1",
+            "internalName": "LP_TAGLPGGroups",
+            "displayName": "LP_TAGLPGGroups",
+            "type": "Taxonomy",
+            "TermSet": "f274dd8a-e127-484e-be84-a75665da6d98",
+            "AnchorId": "f304dd3a-e127-154e-fe84-b71265da6d98",
+            "group": "Legal Portal Columns",
+            "Required": true
+        },
+        {
+            "id": "600FDBEA-30CA-492A-BCB1-FBB314388C8B",
+            "internalName": "LP_TAGLegalAreas",
+            "displayName": "LP_TAGLegalAreas",
+            "type": "TaxonomyMulti",
+            "TermSet": "f274dd8a-e127-484e-be84-a75665da6d98",
+            "AnchorId": "f174dd8a-e127-484e-be84-b75665da6d98",
+            "group": "Legal Portal Columns",
+            "Required": false
+
+        },
+        {
+            "id": "96385b0e-5f1b-472d-8b5e-6c3f1d72f4f1",
+            "internalName": "LP_TAGIntelPageCategory",
+            "displayName": "LP_TAGIntelPageCategory",
+            "type": "TaxonomyMulti",
+            "TermSet": "fb0d5d23-50f0-475a-a972-1070fcc4b665",
+            "AnchorId": "E7895E42-EA02-4816-B16B-BB4C8FA5B03B",
+            "group": "Legal Portal Columns",
+            "Required": false
+
+        },
+        /*--Site columns for Tags ends here--*/
+
+        /*---Site columns for show/hide left/right sections on group home page starts here-----*/
+
+        {
+            "id": "ac01fe9f-5752-4412-a1cc-f7238967bf06",
+            "internalName": "LP_ShowLeftNav",
+            "displayName": "LP_ShowLeftNav",
+            "type": "Boolean",
+            "group": "Legal Portal Columns",
+            "DefaultValue": "1"
+        },
+        {
+            "id": "ac02fe9f-5752-4412-a1cc-f7238967bf06",
+            "internalName": "LP_ShowRightSideControls",
+            "displayName": "LP_ShowRightSideControls",
+            "type": "Boolean",
+            "group": "Legal Portal Columns",
+            "DefaultValue": "1"
+        },
+
+        /*----------Site columns for show/hide left/right sections on group home page ends here-------------*/
+
+
+        /*Site Columns - to be created for Group Home - Helpful Contacts - starts here*/
+        {
+            "id": "B2A657CD-2CF8-4231-ABDC-7CA8AC263F59",
+            "internalName": "LP_HelpfulContactUserName",
+            "displayName": "Helpful Contact Name",
+            "type": "User",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "D3ED8184-C9F8-4171-9F86-605071FC664E",
+            "internalName": "LP_HelpfulContactEmail",
+            "displayName": "Helpful Contact Email",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "30FDD90F-4EF3-4018-8A60-F7E8DD2EDC22",
+            "internalName": "LP_HelpfulContactRole",
+            "displayName": "Helpful Contact Role",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "8754472F-AB61-481F-939E-D187494DFE16",
+            "internalName": "LP_HelpfulContactDisplayOrder",
+            "displayName": "Contacts Display Order",
+            "type": "Number",
+            "group": "Legal Portal Columns"
+        },
+        {
+
+            "id": "5E0D5257-F21A-41B3-A7EF-1C10AB27D7C4",
+            "internalName": "LP_HelpfulContactTag",
+            "displayName": "Helpful Contact Tag",
+            "type": "Taxonomy",
+            "group": "Legal Portal Columns",
+            "TermSet": "f274dd8a-e127-484e-be84-a75665da6d98",
+            "AnchorId": "f304dd3a-e127-154e-fe84-b71265da6d98",
+            "Required": false
+        },
+
+        /*Site Columns - to be created for Group Home - Helpful Contacts - ends here*/
+        {
+            "id": "D2499490-3F2C-4FB2-B098-A61A4BF1FC1A",
+            "internalName": "LP_LinkUrl",
+            "displayName": "Link URL",
+            "type": "URL",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "68BC026A-0261-4388-B3B6-6B755C2D6ACC",
+            "internalName": "LP_LinkPopular",
+            "displayName": "Popular",
+            "type": "Boolean",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "3FACF577-0360-40F2-B2F7-167468298A05",
+            "internalName": "LP_DisplayOrder",
+            "displayName": "Display Order",
+            "type": "Number",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "81A3CB2E-6730-4E69-B8D2-7B53386A298E",
+            "internalName": "LP_OpenNewWindow",
+            "displayName": "Open in New Window",
+            "type": "Boolean",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "06167e1f-46d8-45f8-bd7e-f927722e0fc8",
+            "internalName": "LP_ExecutiveImage1",
+            "displayName": "LP_ExecutiveImage1",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "7707e619-eeaf-4620-9404-fdc656066fd2",
+            "internalName": "LP_ExecutiveName",
+            "displayName": "LP_ExecutiveName",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "2f3230df-2d6a-483e-9e52-7cb24fd0291b",
+            "internalName": "LP_ExecutiveDesignation",
+            "displayName": "LP_ExecutiveDesignation",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "625c888b-1f89-45e7-bdcd-55e3feb1ddf3",
+            "internalName": "LP_NeedHelpIcon",
+            "displayName": "LP_NeedHelpIcon",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "3b18987e-a038-4fff-925d-c6c643698630",
+            "internalName": "LP_NeedHelpText",
+            "displayName": "LP_NeedHelpText",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "967fd961-9536-4f6f-8ebe-d0fdfa44a420",
+            "internalName": "LP_HelpEmailTo",
+            "displayName": "LP_HelpEmailTo",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "909960aa-d6aa-4933-a1fc-281e948f971e",
+            "internalName": "LP_HelpEmailSubject",
+            "displayName": "LP_HelpEmailSubject",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "fdc20081-2137-4b77-a164-1e425aa82130",
+            "internalName": "LP_NeedHelpDescription",
+            "displayName": "LP_NeedHelpDescription",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "f518237d-fd4c-4f32-a627-06ace0394552",
+            "internalName": "LP_HelpfulResourceText1",
+            "displayName": "LP_HelpfulResourceText1",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "7f9b2f00-7b67-457a-95df-aa6c0b88a741",
+            "internalName": "LP_HelpfulResourceText2",
+            "displayName": "LP_HelpfulResourceText2",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "d1a54f50-5233-4548-aba8-faca29617b68",
+            "internalName": "LP_HelpfulResourceText3",
+            "displayName": "LP_HelpfulResourceText3",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "ba2671dd-65b9-4685-b1c3-4fbc46ba1c71",
+            "internalName": "LP_HelpfulResourceText4",
+            "displayName": "LP_HelpfulResourceText4",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "104a4724-e7ee-42f1-9446-291a4a85dcf2",
+            "internalName": "LP_HelpfulResourceText5",
+            "displayName": "LP_HelpfulResourceText5",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "526bda97-9e43-452d-b2c7-1ff032239970",
+            "internalName": "LP_HelpfulResourceImage1",
+            "displayName": "LP_HelpfulResourceImage1",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "625e096a-c1d6-41aa-954b-fa06ecde3166",
+            "internalName": "LP_HelpfulResourceImage2",
+            "displayName": "LP_HelpfulResourceImage2",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "32dca149-f89a-486d-970a-ab878def62ad",
+            "internalName": "LP_HelpfulResourceImage3",
+            "displayName": "LP_HelpfulResourceImage3",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "88777746-6240-4fda-b503-82fa7f266213",
+            "internalName": "LP_HelpfulResourceImage4",
+            "displayName": "LP_HelpfulResourceImage4",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "5749f4cc-885e-4d77-80b2-16146c52c0d8",
+            "internalName": "LP_HelpfulResourceImage5",
+            "displayName": "LP_HelpfulResourceImage5",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "d7005e63-bb4e-4e85-a9b5-4bef361f5959",
+            "internalName": "LP_HelpfulResourceURL1",
+            "displayName": "LP_HelpfulResourceURL1",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "e3ee3433-a5be-4673-a816-3003456a40a4",
+            "internalName": "LP_HelpfulResourceURL2",
+            "displayName": "LP_HelpfulResourceURL2",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "473f33b0-0cc5-4a56-8aae-4b55833a64af",
+            "internalName": "LP_HelpfulResourceURL3",
+            "displayName": "LP_HelpfulResourceURL3",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "b4c247f1-5796-47a8-9229-21b0bcee6e32",
+            "internalName": "LP_HelpfulResourceURL4",
+            "displayName": "LP_HelpfulResourceURL4",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "8c6dfc0c-2ff6-4911-8739-511541996fd9",
+            "internalName": "LP_HelpfulResourceURL5",
+            "displayName": "LP_HelpfulResourceURL5",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "c0b7b183-e293-4e44-bd14-7c00e4849120",
+            "internalName": "Lp_NewTrainingHeader",
+            "displayName": "Lp_NewTrainingHeader",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "3f2ce951-be7d-4ffb-8aef-fd4672437f33",
+            "internalName": "Lp_NewTrainingImage",
+            "displayName": "Lp_NewTrainingImage",
+            "type": "Image",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "60b294cb-2114-4729-8230-c607433dd1d7",
+            "internalName": "Lp_NewTrainingContent",
+            "displayName": "Lp_NewTrainingContent",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "e25753e7-ba2e-4b11-8226-2810e4c0e521",
+            "internalName": "Lp_NewTrainingButtonText",
+            "displayName": "Lp_NewTrainingButtonText",
+            "type": "Text",
+            "group": "Legal Portal Columns"
+        },
+        {
+            "id": "cc52fe9f-5752-4412-a1cc-f7238967bf06",
+            "internalName": "Lp_NewTrainingButtonURL",
+            "displayName": "Lp_NewTrainingButtonURL",
+            "type": "Link",
+            "group": "Legal Portal Columns"
+        }
+
+    ],
+  "contenttypes": [
+    {
+      "name": "LPCT_GroupArticlePage",
+      "description": "Group Article Page Content type",
+      "group": "Legal Portal Content Types",
+      "parentContentType": "Article Page",
+      "fieldInternalNames": [
+        { "name": "LP_TAGLPGGroups" },
+        { "name": "LP_TAGLegalAreas" },
+        { "name": "LP_TAGIntelPageCategory" }
+      ]
+    }
+
+  ],
+    "folders": [{
+            "url": "SiteAssets",
+            "name": "Legal"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/BrandStyles"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/FontAwesome"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/Fonts"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/Images"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/Scripts"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/Styles"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/webfonts"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/quicklinks"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/legalAreaList"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/legalGroupGridList"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/footerlinks"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/Breadcrumbs"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/OtherUsefulLinks"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/HelpfulResources"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/NewTraining"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/TopNavigation"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/executiveCounsel"
+        },
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/needhelp"
+        },
+
+        /* Folder Structure - to be created for Group Home - Helpful Contacts - starts here*/
+
+        {
+            "url": "SiteAssets",
+            "name": "Legal/App/HelpfulContacts"
+        }
+
+        /* Folder Structure - to be created for Group Home - Helpful Contacts - ends here*/
+    ],
+    "masterPages": [{
+        "path": "Branding\\MasterPage\\legal_master.master",
+        "url": "_catalogs/masterpage",
+        "description": "Legal Portal Master page",
+        "applyToRootSite": true,
+        "applyToSites": [],
+        "project": "Neudesic.Intel.LegalDotCom.Deploy"
+    }],
+    "pageLayouts": [{
+            "path": "Branding\\PageLayouts\\LegalHomeLayout.aspx",
+            "url": "_catalogs/masterpage",
+            "description": "Legal Portal Home Page layout",
+            "associatedContentType": "LPCT_HomePage",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+
+        {
+            "path": "Branding\\PageLayouts\\LegalGroupHomePageLayout.aspx",
+            "url": "_catalogs/masterpage",
+            "description": "Legal Portal Group Home Page layout",
+            "associatedContentType": "LPCT_GroupHomePage",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+      {
+        "path": "Branding\\PageLayouts\\LegalGroupArticlePageLayout.aspx",
+        "url": "_catalogs/masterpage",
+        "description": "Legal Portal Group Article Page layout",
+        "associatedContentType": "LPCT_GroupArticlePage",
+        "project": "Neudesic.Intel.LegalDotCom.Deploy"
+      }
+    ],
+    "files": [{
+            "path": "SiteAssets\\App\\app.js",
+            "url": "SiteAssets/Legal/App",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\TopNavigation\\LP_TopNav.css",
+            "url": "SiteAssets/Legal/App/TopNavigation",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\TopNavigation\\LP_TopNav.html",
+            "url": "SiteAssets/Legal/App/TopNavigation",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\TopNavigation\\LP_TopNav.js",
+            "url": "SiteAssets/Legal/App/TopNavigation",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\quicklinks\\quicklinks.css",
+            "url": "SiteAssets/Legal/App/quicklinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\quicklinks\\quicklinks.html",
+            "url": "SiteAssets/Legal/App/quicklinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\quicklinks\\quicklinks.js",
+            "url": "SiteAssets/Legal/App/quicklinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalAreaList\\legalAreaListController.js",
+            "url": "SiteAssets/Legal/App/legalAreaList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalAreaList\\legalAreaList.css",
+            "url": "SiteAssets/Legal/App/legalAreaList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalAreaList\\legalAreaList.html",
+            "url": "SiteAssets/Legal/App/legalAreaList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalGroupGridList\\legalGroupGridListController.js",
+            "url": "SiteAssets/Legal/App/legalGroupGridList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalGroupGridList\\legalGroupGridList.css",
+            "url": "SiteAssets/Legal/App/legalGroupGridList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\legalGroupGridList\\legalGroupGridList.html",
+            "url": "SiteAssets/Legal/App/legalGroupGridList",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\footerlinks\\footerlinks.css",
+            "url": "SiteAssets/Legal/App/footerlinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\footerlinks\\footerlinks.html",
+            "url": "SiteAssets/Legal/App/footerlinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\footerlinks\\footerlinks.js",
+            "url": "SiteAssets/Legal/App/footerlinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulResources\\HelpfulResources.css",
+            "url": "SiteAssets/Legal/App/HelpfulResources",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulResources\\HelpfulResources.html",
+            "url": "SiteAssets/Legal/App/HelpfulResources",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulResources\\HelpfulResources.js",
+            "url": "SiteAssets/Legal/App/HelpfulResources",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\Breadcrumbs\\Breadcrumb.css",
+            "url": "SiteAssets/Legal/App/Breadcrumbs",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\Breadcrumbs\\Breadcrumb.html",
+            "url": "SiteAssets/Legal/App/Breadcrumbs",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\Breadcrumbs\\Breadcrumb.js",
+            "url": "SiteAssets/Legal/App/Breadcrumbs",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\OtherUsefulLinks\\OtherUsefulLinks.js",
+            "url": "SiteAssets/Legal/App/OtherUsefulLinks",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\NewTraining\\NewTraining.css",
+            "url": "SiteAssets/Legal/App/NewTraining",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\NewTraining\\NewTraining.html",
+            "url": "SiteAssets/Legal/App/NewTraining",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\NewTraining\\NewTraining.js",
+            "url": "SiteAssets/Legal/App/NewTraining",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\executiveCounsel\\executivecounsel.css",
+            "url": "SiteAssets/Legal/App/executiveCounsel",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\executiveCounsel\\executivecounsel.html",
+            "url": "SiteAssets/Legal/App/executiveCounsel",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\executiveCounsel\\executivecounsel.js",
+            "url": "SiteAssets/Legal/App/executiveCounsel",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\needhelp\\needhelp.css",
+            "url": "SiteAssets/Legal/App/needhelp",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\needhelp\\needhelp.html",
+            "url": "SiteAssets/Legal/App/needhelp",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\needhelp\\needhelp.js",
+            "url": "SiteAssets/Legal/App/needhelp",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\BrandStyles\\custom.css",
+            "url": "SiteAssets/Legal/BrandStyles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\BrandStyles\\leftNavAccordion.css",
+            "url": "SiteAssets/Legal/BrandStyles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\BrandStyles\\sp_override.css",
+            "url": "SiteAssets/Legal/BrandStyles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_Bd.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_BdIt.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_It.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_Lt.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_LtIt.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClear_Rg.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Fonts\\IntelClearPro_Bd.ttf",
+            "url": "SiteAssets/Legal/Fonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Scripts\\bootstrap.min.js",
+            "url": "SiteAssets/Legal/Scripts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Scripts\\jquery-3.3.1.slim.min.js",
+            "url": "SiteAssets/Legal/Scripts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Scripts\\leftNavAccordion.js",
+            "url": "SiteAssets/Legal/Scripts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Scripts\\angular.min.js",
+            "url": "SiteAssets/Legal/Scripts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Scripts\\jquery-3.3.1.min.js",
+            "url": "SiteAssets/Legal/Scripts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Styles\\bootstrap.min.css",
+            "url": "SiteAssets/Legal/Styles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Styles\\all.min.css",
+            "url": "SiteAssets/Legal/Styles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Styles\\custom.css",
+            "url": "SiteAssets/Legal/Styles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Styles\\menu - Copy.css",
+            "url": "SiteAssets/Legal/Styles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Styles\\menu.css",
+            "url": "SiteAssets/Legal/Styles",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\font-awesome-all.min.css",
+            "url": "SiteAssets/Legal/FontAwesome",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-brands-400.eot",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-brands-400.svg",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-brands-400.ttf",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-brands-400.woff",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-brands-400.woff2",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-regular-400.eot",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-regular-400.svg",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-regular-400.ttf",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-regular-400.woff",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-regular-400.woff2",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-solid-900.eot",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-solid-900.svg",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-solid-900.ttf",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-solid-900.woff",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\FontAwesome\\webfonts\\fa-solid-900.woff2",
+            "url": "SiteAssets/Legal/FontAwesome/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\arrow_dow.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\binoculars.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\card.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\education.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\footer.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\grid-dark.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\grid-lite.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\helpful.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\home_search.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\home_search_bg.jpeg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\list-dark.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\list-lite.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\logo.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\lpg_groups.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\new-window.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\open-book.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\problem.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\question.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\sitmap.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\orgChart.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\Rodger.jpg",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\Search Background.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\search.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\Images\\search_background.png",
+            "url": "SiteAssets/Legal/Images",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\webfonts\\fa-solid-900.woff2",
+            "url": "SiteAssets/Legal/webfonts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulContacts\\HelpfulContacts.css",
+            "url": "SiteAssets/Legal/App/HelpfulContacts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulContacts\\HelpfulContacts.html",
+            "url": "SiteAssets/Legal/App/HelpfulContacts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        },
+        {
+            "path": "SiteAssets\\App\\HelpfulContacts\\HelpfulContacts.js",
+            "url": "SiteAssets/Legal/App/HelpfulContacts",
+            "project": "Neudesic.Intel.LegalDotCom.Deploy"
+        }
+    ],
+    "lists": [{
+            "title": "QuickLinks",
+            "description": "LP Quick Links",
+            "templateType": 100,
+            "contentTypeName": "LPCT_QuickLinks"
+        }
+        /* List - to be created under Group Site -Trademarks And Brands - starts here*/
+        //if list name = HelpfulContacts, Managed metedata column 'Helpful Contact LPG Group (Sub site)'= will be set with default value = subsite name (in which list is being created)
+        //{
+        //  "title": "HelpfulContacts",
+        //  "description": "LP Helpful Contacts",
+        //  "templateType": 100,
+        //  "contentTypeName": "LPCT_HelpfulContacts"
+        //}
+
+        /* List - to be created under Group Site -Trademarks And Brands - ends here*/
+    ],
+    "lookupcolumns": [],
+    "pages": [],
+    "webparts": [],
+    "listData": [],
+    "groups": []
+}
